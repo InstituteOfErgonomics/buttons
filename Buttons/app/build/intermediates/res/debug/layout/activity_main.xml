@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ButtonsMainActivity" >
+
+    <SeekBar
+        android:id="@+id/thresholdSB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/externalC"
+        android:layout_marginTop="21dp" />
+
+    <RadioButton
+        android:id="@+id/buttonClosedR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thresholdSB"
+        android:layout_below="@+id/thresholdSB"
+        android:layout_marginTop="14dp"
+        android:editable="false" />
+ 
+    <EditText
+        android:id="@+id/dikablisIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonClosedR"
+        android:layout_below="@+id/buttonClosedR"
+        android:layout_marginTop="25dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dikablisIp"
+        android:layout_alignBottom="@+id/dikablisIp"
+        android:layout_toRightOf="@+id/dikablisIp"
+        android:text="Dikablis" />
+
+    <CheckBox
+        android:id="@+id/externalC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thresholdSB"
+        android:layout_below="@+id/connectedRB"
+        android:layout_marginTop="18dp"
+        android:onClick="toggleExternalButton"
+        android:text="enable external button (phon jack)" />
+
+    <CheckBox
+        android:id="@+id/dynamicC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/positionS"
+        android:layout_alignParentBottom="true"
+        android:text="dynamic/driving" />
+
+    <Spinner
+        android:id="@+id/positionS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dynamicC"
+        android:layout_alignLeft="@+id/dikablisIp"
+        android:entries="@array/position_arrays"
+     />
+
+    <TextView
+        android:id="@+id/ipTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/connectedRB"
+        android:layout_alignParentTop="true"
+        android:text="IP:" />
+
+    <RadioButton
+        android:id="@+id/connectedRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/externalC"
+        android:layout_below="@+id/ipTv"
+        android:editable="false" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/connectedRB"
+        android:layout_alignBottom="@+id/connectedRB"
+        android:layout_toRightOf="@+id/connectedRB"
+        android:text="Silab connected" />
+       
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/krause/AndroidstudioProjects/Buttons/app/src/main/res/layout/activity_main.xml -->

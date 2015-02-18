@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Buttons</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+    <string-array name="position_arrays">
+        <item>(1) Position 1</item>
+        <item>(2) Position 2</item>
+        <item>(3) Position 3</item>
+        <item>(4) Position 4</item>
+        <item>(5) Position 5</item>
+        </string-array>    
+    
+</resources>
