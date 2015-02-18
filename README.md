@@ -1,7 +1,7 @@
 Buttons Application
 ===
 
-The button application was used in experiments about glance durations and hand movements times.
+The button application was used in experiments about glance durations and hand movement times.
 see
 --
     [1] Kremser, F., Feldhütter, A., Conti, A.S. , Krause, M. ,  An, D., Bengler, K., (2015)
