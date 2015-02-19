@@ -1,0 +1,48 @@
+# a snippet may help you to connect the application to SILAB driving simulation
+
+	DPUSocket mySmartphone
+	{
+		Computer = { ASS };
+		Index = 100;  
+
+		BigEndian = false;
+
+		Socket_IsTCPIP = true;
+
+		Socket_IP = "192.168.10.150";
+	
+		Socket_IsServer = false;
+
+		Socket_PortSend = 7007;
+
+		SendDefinition = (
+			(remoteControl,ubyte)
+
+		);
+
+		#Socket_PortReceive = 5331;
+
+		ReceiveDefinition = (
+
+  			(timestamp, long), 	#timestamp
+  			(rt, long), 	#reaction time/movement time [ms]
+  			(condition, byte), 	#condition, static/dynamic
+  			(position, byte), 	#center console, arm rest etc
+  			(layout, byte), 	#screen layout 
+  			(button, byte), 	#target button 
+  			(x, ulong), 	#touch pos x
+  			(y, ulong), 	#touch pos y
+  			(targetX, ulong), 	#target mid position x
+  			(targetY, ulong), 	#target mid position y
+  			(queuedPackets, ulong) 		#queued packets on the smartphone to send
+		);
+
+
+	};
+	Connections =
+	{
+
+		myKeyboard.Key <-> mySmartphone.remoteControl #keyboard can controll button to be presed
+#		myHedgehogKiller.Out2 	 <-> mySmartphone.remoteControl #hedgehog can controll the experiment
+
+	};
