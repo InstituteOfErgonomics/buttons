@@ -3,9 +3,7 @@ package de.tum.mw.lfe.buttons;
 //------------------------------------------------------
 //Revision History 'Button' application for experiments
 // see
-//  [1] Kremser, F., Feldhütter, A., Conti, A.S. , Krause, M. ,  An, D., Bengler, K., (2015)
-//      The Influence of Target Location on Hand Movement Times while Driving. AHFE 2015
-//  [2] Conti, A.S. , Kremser, F., Krause, M. ,  An, D., Bengler, K., (2015)
+//  Conti, A.S. , Krause, M. ,  An, D., Bengler, K., (2015)
 //      The effect of varying target sizes and distances between target and non-target elements
 //      on goal-directed hand movement times while driving. AHFE 2015
 //
