@@ -22,3 +22,5 @@ The coordinates and times were recorded and send to a driving simulation (SILAB,
 The application also send triggers to an eye tracking system (Dikablis 2, Ergoneers GmbH) when the steering wheel button was released and when the display was touched.
 For the steering wheel button, the method from the Mobile Detection Task application was used (microphone channel via ear phone jack)
 
+-------------
+[![DOI](https://zenodo.org/badge/12944/InstituteOfErgonomics/buttons.svg)](http://dx.doi.org/10.5281/zenodo.17613)
